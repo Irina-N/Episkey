@@ -95,15 +95,15 @@ body {
 
 .about-product-title {
     display: block;
-    margin: 0 0 30px 0;
+    margin: 0 0 10px 0;
     font-size: 30px;
-    line-height: 36px;
+    line-height: 30px;
     font-weight: 400;
     color: #445161;
 }
 
 .about-product-text {
-    margin: 0 0 20px 0;
+    margin: 20px 0 0 0;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -148,8 +148,8 @@ body {
 .benefits-list-item {
     display: block;
     width: 50%;
-    padding: 0 23px 35px 42px;
-    margin: 0;
+    padding: 0 23px 0 42px;
+    margin: 0 0 35px 0;
     list-style: none;
     font-size: 17px;
     line-height: 24px;
@@ -161,7 +161,7 @@ body {
 
 .benefits-list-item:nth-child(5),
 .benefits-list-item:nth-child(6) {
-    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .benefits-list-item:before {
@@ -341,11 +341,11 @@ details[open]:before {
 }
 
 .reviews-title {
+    margin: 0 auto 35px;
     width: 100%;
     text-align: center;
-    margin: 0 auto 11px;
     font-size: 30px;
-    line-height: 36px;
+    line-height: 30px;
     font-weight: 400;
     color: #445161;
 }
@@ -353,13 +353,19 @@ details[open]:before {
 .review {
     width: 50%;
     min-height: 121px;
-    margin: 24px 0 0;
+    margin: 0 0 24px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
 
-.rewiew-avatar {
+.review:last-child,
+.review:nth-last-child(2) {
+ margin: 0;
+}
+
+.review-avatar {
+    display: block;
     width: 75px;
     height: 75px;
     border-radius: 50%;
@@ -367,11 +373,7 @@ details[open]:before {
     margin: 0 29px 0 0;
 }
 
-.review-avatar-image {
-    border-radius: 50%;
-}
-
-.rewiew-text {
+.review-text {
     width: 470px;
     min-height: inherit;
     margin: 0;
@@ -386,7 +388,7 @@ details[open]:before {
     box-sizing: border-box;
 }
 
-.rewiew-text:before {
+.review-text:before {
     content: "";
     width: 0;
     height: 0;
