@@ -361,7 +361,7 @@ details[open]:before {
 
 .review:last-child,
 .review:nth-last-child(2) {
- margin: 0;
+    margin: 0;
 }
 
 .review-avatar {
@@ -513,4 +513,191 @@ details[open]:before {
 .buy-it-now-offer-btn:active {
     background-color: #fff;
     color: #445161;
-   }
+}
+
+footer {
+    width: 100%;
+    min-height: 535px;
+    margin: 0 auto;
+}
+
+.contacts {
+    width: 100%;
+    min-height: 509px;
+    margin: 0 auto;
+    padding: 50px;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: #445162;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.contacts-title {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0 auto 31px;
+}
+
+.contacts-feedback {
+    width: 500px;
+    min-height: 355px;
+    margin: 0 46px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.contacts-feedback-field {
+    width: 100%;
+    min-height: 40px;
+    margin-bottom: 21px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #000;
+}
+
+.contacts-feedback-field::-webkit-input-placeholder {
+    color: #445162;
+}
+
+.contacts-feedback-field:-ms-input-placeholder {
+    color: #445162;
+}
+
+.contacts-feedback-field::-ms-input-placeholder {
+    color: #445162;
+}
+
+.contacts-feedback-field::placeholder {
+    color: #445162;
+}
+
+#message {
+    height: 170px;
+    resize: none;
+    font-family: Arial, sans-serif;
+}
+
+#form-button {
+    width: 140px;
+    min-height: 40px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #445162;
+    border-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    word-break: break-all;
+    outline: none;
+}
+
+#form-button:hover {
+    background-color: burlywood;
+    color: #fff;
+}
+
+#form-button:active {
+    background-color: #fff;
+    color: #445161;
+}
+
+.contacts-social {
+    width: 246px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+}
+
+.contacts-social-item {
+    width: 100%;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    margin: 0 0 18px 0;
+    position: relative;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+.contacts-social-item:nth-child(4) {
+    margin: 0 0 32px 0;
+}
+
+.contacts-social-item:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+}
+
+.contacts-social-item:nth-child(1):before {
+    background-image: url(../img/skype_icon_319.png);
+}
+
+.contacts-social-item:nth-child(2):before {
+    background-image: url(../img/icq_icon_324.png);
+}
+
+.contacts-social-item:nth-child(3):before {
+    background-image: url(../img/email_icon_332.png);
+}
+
+.contacts-social-item:nth-child(4):before {
+    background-image: url(../img/phone_icon_337.png);
+}
+
+.contacts-social-networks {
+    width: 100%;
+    min-height: 44px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts-social-networks-item:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.contacts-social-networks-item:active {
+    opacity: 1;
+}
+
+.contacts-social-networks-logo {
+    width: 44px;
+    height: 44px;
+}
+
+footer .copyright {
+    width: 100%;
+    height: 27px;
+    background-color: #f5f5f5;
+    text-align: center;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #445162;
+}
