@@ -95,7 +95,7 @@ body {
 
 .about-product-title {
     display: block;
-    margin: 0 0 10px 0;
+    margin: 0 0 30px 0;
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
@@ -103,11 +103,15 @@ body {
 }
 
 .about-product-text {
-    margin: 20px 0 0 0;
+    margin: 0 0 20px 0;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
     color: #333333;
+}
+
+.about-product-text:nth-child(3) {
+    margin: 0;
 }
 
 .about-product-video {
@@ -531,7 +535,7 @@ footer {
     background-color: #445162;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-content: flex-start;
 }
 
@@ -676,18 +680,35 @@ footer {
     justify-content: space-between;
 }
 
+.contacts-social-networks-item {
+    width: 44px;
+    height: 44px;
+    background-image: url(../img/social_buttons_338.png);
+    background-repeat: no-repeat;    
+}
+
+.contacts-social-networks-item:nth-child(2) {
+    background-position: -49px 0;
+}
+
+.contacts-social-networks-item:nth-child(3) {
+        background-position: -98px 0;
+}
+
+.contacts-social-networks-item:nth-child(4) {
+        background-position: -147px 0;
+}
+
+.contacts-social-networks-item:nth-child(5) {
+        background-position: -196px 0;
+}
+
 .contacts-social-networks-item:hover {
-    cursor: pointer;
     opacity: 0.6;
 }
 
 .contacts-social-networks-item:active {
     opacity: 1;
-}
-
-.contacts-social-networks-logo {
-    width: 44px;
-    height: 44px;
 }
 
 footer .copyright {
