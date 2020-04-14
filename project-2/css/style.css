@@ -47,6 +47,9 @@ body {
 .logo:hover {
   color: #c7b299;
 }
+.logo:active {
+  color: #fff;
+}
 .main-menu {
   display: flex;
   width: 640px;
@@ -100,15 +103,16 @@ body {
   background-color: transparent;
   outline: none;
   position: absolute;
-  top: -2px;
-  left: 35px;
+  bottom: -35px;
+  left: -285px;
 }
 .site-search-field:focus {
   padding: 5px 10px;
-  width: 270px;
+  width: 320px;
   background-color: #fbfaf8;
+  transition: width 1s ease-out;
 }
-.site-search-btn {
+.site-search-label {
   outline: none;
   border: none;
   cursor: pointer;
@@ -120,21 +124,15 @@ body {
   top: -2px;
   left: 0;
 }
-.site-search-btn:hover {
+.site-search-label:hover {
   fill: #c7b299;
 }
-.site-search-btn:active {
+.site-search-label:active {
   fill: #ffffff;
 }
 .site-search-svg {
   width: 27px;
   height: 28px;
-}
-.site-search:hover .site-search-field {
-  padding: 5px 10px;
-  width: 270px;
-  transition: width 1s ease-out;
-  background-color: #fbfaf8;
 }
 .slider {
   width: 1920px;
