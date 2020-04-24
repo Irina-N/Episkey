@@ -1,0 +1,33 @@
+.partners {
+    width: @width-main;
+    min-height: 489px;
+    margin: 0;
+    padding: 140px 0;
+    box-sizing: border-box;
+    background-color: #595f6f;
+    background-image: url(../img/partners_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .partners-item {
+        margin: 0 45px;
+
+        &:hover {
+            transform: scale(1.1);
+            transition-duration: 1s;
+        }
+
+        &:active {
+            transform: scale(1);
+            transition-duration: 100ms;
+        }
+    }
+
+    .partners-item-logo {
+        width: 210px;
+        height: auto;
+    }
+}
