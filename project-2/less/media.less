@@ -1,7 +1,20 @@
 @media (max-width: 576px) {
 
+    html {
+        overflow-x: hidden;
+    }
+
+    body {
+        max-width: 576px;
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0 auto;
+    }
+
     .container {
-        width: 576px;
+        max-width: 576px;
+        width: 100%;
+        overflow-x: hidden;
         padding: 0;
     }
 
@@ -24,6 +37,10 @@
         align-items: center;
         padding: 22px;
         box-sizing: border-box;
+    }
+
+    .logo {
+        margin: 0;
     }
 
     .main-menu {
@@ -152,15 +169,20 @@
     }
 
     .service {
-        width: 40%;
-        height: 145px;
+        width: 45%;
+        min-height: 130px;
+        max-height: 180px;
+
+        &-icon {
+            height: 35px;
+        }
 
         &:nth-child(odd) {
-            margin: 0 25px 0 0;
+            margin: 0 20px 0 0;
         }
 
         &:nth-child(even) {
-            margin: 0 0 0 25px;
+            margin: 0 0 0 20px;
         }
 
         &:after {
@@ -190,13 +212,13 @@
         padding: 30px 22px;
 
         &-title {
-            margin: 0 auto 8px;
+            margin: 0 auto 15px;
         }
 
         &-txt {
-            width: 80%;
-            font-size: 12px;
-            line-height: 18px;
+            width: 95%;
+            font-size: 16px;
+            line-height: 24px;
             margin-bottom: 30px;
         }
 
@@ -206,51 +228,44 @@
 
         &-cards {
             width: @width-main;
-            flex-flow: row wrap;
-            justify-content: center;
-            align-content: flex-start;
+            flex-flow: column wrap;
+            justify-content: flex-start;
+            align-content: center;
 
             .projects-item {
-                width: 250px;
+                width: 350px;
                 min-height: 215px;
-                margin: 0 15px 30px;
+                margin: 0 0 30px;
                 background-color: @color-bg-light;
                 text-decoration: none;
                 position: relative;
 
-                &:nth-child(4) {
+                &:nth-child(4),
+                &:nth-child(5) {
                     margin-bottom: 30px;
                 }
 
-                &:nth-child(odd) {
-                    margin-left: 0;
-                }
-
-                &:nth-child(even) {
-                    margin-right: 0;
-                }
-
                 &:after {
-                    bottom: 54px;
+                    bottom: 66px;
                     left: 10px;
                 }
 
                 &-pic {
-                    width: 250px;
+                    width: 350px;
                     height: auto;
                 }
 
                 &-title {
-                    font-size: 16px;
-                    line-height: 16px;
+                    font-size: 18px;
+                    line-height: 18px;
                     text-align: center;
-                    margin: 10px 10px 8px;
+                    margin: 10px auto;
                 }
 
                 &-description {
-                    margin: 0 10px;
+                    margin: 0 auto 15px;
                     text-align: center;
-                    font-size: 12px;
+                    font-size: 14px;
                 }
 
                 &:active {
@@ -277,29 +292,30 @@
     }
 
     .mobile {
-        min-height: 350px;
+        min-height: 400px;
         margin: 0 auto;
-        padding: 30px 22px 60px;
+        padding: 40px 25px;
         background-color: #fbfaf8;
-        background-size: auto 270px;
-        background-position: bottom 0 left 37px;
+        background-size: auto 300px;
+        background-position: bottom 0 left 20px;
     }
 
     .mobile-title {
         text-align: center;
+        margin: 0 auto 20px;
     }
 
     .mobile-txt {
-        margin: 10px 15px 40px;
-        font-size: 14px;
-        line-height: 22px;
+        margin: 10px 0 35px;
+        font-size: 16px;
+        line-height: 24px;
         text-align: justify;
     }
 
     .mobile-list {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 24px;
-        margin-left: 150px;
+        margin: 0 0 0 145px;
     }
 
     .mobile-list-item {
@@ -354,7 +370,7 @@
 
         &-txt {
             font-size: 16px;
-            line-height: 22px;
+            line-height: 24px;
             margin: 10px auto 25px;
             width: @width-main;
         }
@@ -394,7 +410,76 @@
     }
 
     .info {
-        display: none
+        padding: 22px;
+        flex-wrap: wrap;
+
+        &-item {
+            width: 100%;
+            margin: 0 0 15px;
+
+            &-unit {
+                width: 100%;
+
+                &:not(:last-child):after {
+                    height: 1px;
+                    bottom: -10px;
+                    width: 100%;
+                }
+            }
+
+            &-title:not(.logo) {
+                margin: 0 0 15px;
+                height: 46px;
+                padding: 20px 0 0;
+            }
+        }
+    }
+
+    .about_waxom {
+        &-txt {
+            margin: 15px 0;
+        }
+    }
+
+    .our_posts {
+        display: none;
+    }
+
+    &.our_twitter {
+        &-item {
+            margin: 0 0 25px;
+        }
+    }
+
+    .dribbble_widget {
+
+        &-item:nth-child(even) {
+            margin: 0;
+        }
+
+        &-item:nth-child(odd) {
+            margin: 0;
+        }
+
+        &-item:nth-child(2) {
+
+            width: 110px;
+            height: 98px;
+
+        }
+
+        &-item:nth-child(3) {
+            width: 110px;
+        }
+
+        &-item:nth-child(4) {
+            width: 110px;
+            background-repeat: no-repeat;
+        }
+
+        &-item:nth-child(5) {
+            width: 110px;
+        }
     }
 
     .copyright {

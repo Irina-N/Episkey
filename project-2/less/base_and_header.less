@@ -3,6 +3,7 @@ html {
 }
 
 body {
+    max-width: 1920px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -10,7 +11,7 @@ body {
 }
 
 .container {
-    width: 1920px;
+    max-width: 1920px;
     margin: 0 auto;
     box-sizing: border-box;
     font-family: 'montserrat', sans-serif;
@@ -153,7 +154,7 @@ main {
     padding: 285px 0 0;
     box-sizing: border-box;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
@@ -178,7 +179,7 @@ main {
     }
 
     &-content {
-        width: 1236px;
+        width: 600px;
         height: 263px;
         margin: 0;
         display: flex;
@@ -196,14 +197,15 @@ main {
         &-title-2 {
             display: block;
             .text-titles (@size: 52px, @height: 52px, @weight: 800, @color: @color-text-light);
-            letter-spacing: 2px;
+            letter-spacing: 0.5px;
         }
 
         &-txt {
             .text-basic (@height: 24px, @color: @color-text-light, @align: center);
-            width: 565px;
+            width: 600px;
             min-height: 42px;
-            margin: 19px auto 52px;
+            margin: 19px 0 52px;
+
         }
 
         &-btn {
@@ -220,10 +222,10 @@ main {
     }
 
     &-pagination {
-        width: 99px;
+        width: @width-main;
         margin: 327px auto 0;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         flex-wrap: nowrap;
 
@@ -235,6 +237,7 @@ main {
             background-color: #ffffff;
             border: 2.0px solid transparent;
             box-sizing: border-box;
+            margin: 0 5px;
 
             &:hover:not(.active) {
                 background-color: @color-accent;
@@ -253,6 +256,7 @@ main {
             border-radius: 50%;
             border: 2.0px solid #d3c1ad;
             background-color: transparent;
+            margin: 0 5px;
 
             &:hover {
                 opacity: 0.5;

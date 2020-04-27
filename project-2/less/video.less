@@ -1,17 +1,19 @@
 .video-presentation {
     width: @width-main;
     margin: 0 auto;
+    height: 705px;
 }
 
 .video {
+    width: 100%;
+    height: 705px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 705px;
     position: relative;
     overflow: hidden;
     background-color: @color-text-main;
+    object-fit: cover;
 
     &-item {
         width: @width-main;
@@ -19,7 +21,8 @@
 
         &[poster] {
             filter: brightness(40%);
-            width: @width-main;
+            object-fit: cover;
+
 
             &:focus {
                 filter: none;
