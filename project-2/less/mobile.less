@@ -1,0 +1,51 @@
+.mobile {
+    width: @width-main;
+    min-height: 690px;
+    margin: 0 auto;
+    padding: 195px 0 0;
+    box-sizing: border-box;
+    background-image: url(../img/iphone_in_hand.png);
+    background-size: 423px 616px;
+    background-repeat: no-repeat;
+    background-position: bottom 0 left 423px;
+    background-clip: border-box;
+}
+
+.mobile-title {
+    .text-titles (@align: left);
+    display: block;
+    max-width: 660px;
+    margin: 0 80px 40px 877px;
+}
+
+.mobile-txt {
+    .text-basic ();
+    max-width: 660px;
+    margin: 0 80px 0 877px;
+}
+
+.mobile-list {
+    .text-basic (@height: 32px);
+    list-style-type: none;
+    max-width: 660px;
+    margin: 40px 80px 0 877px;
+}
+
+.mobile-list-item {
+    display: block;
+    margin: 0 0 0 50px;
+    position: relative;
+}
+
+.mobile-list-item:after {
+    content: "";
+    display: block;
+    background-image: url(../img/list_marker.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 4px;
+    left: -40px;
+}
