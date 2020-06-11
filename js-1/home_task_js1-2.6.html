@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home task</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+    
+	    // Задание 6
+
+	    let amount = Number(prompt("Введите сумму, которую вы хотите зачислить"));
+
+	    if (Number.isInteger(amount)) {
+	    	amount = String(amount);
+	    	let amountLength = amount.length;
+			let lastAmountSymbol = +amount.charAt(amountLength - 1);
+
+			switch(lastAmountSymbol) {
+				case 1:
+					alert(amount + " рубль зачислены на ваш счёт");
+					break;
+				case 2:
+				case 3:
+				case 4:
+					alert(amount + " рубля зачислены на ваш счёт");
+					break;
+				case 5:
+				case 6:
+				case 7:
+				case 8:
+				case 9:
+				case 0:
+					alert(amount + " рублей зачислены на ваш счёт");	
+					break;
+			}
+	    } else {
+	    		alert("Нужно ввести целое число");	
+	    }
+
+    </script>
+</body>
+
+</html>
+
+
