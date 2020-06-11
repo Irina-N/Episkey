@@ -1,0 +1,41 @@
+.adv {
+    width: @width-main;
+    min-height: 150px;
+    background-color: #f4f5f8;
+    background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 375px;
+    box-sizing: border-box;
+
+    &-txt {
+        margin: 0;
+
+        &-title {
+            margin: 0 0 8px 0;
+            .text-titles (@size: 28px, @height: 28px, @weight: 400, @color: @color-text-light, @align: left);
+
+            &-brend {
+                color: @color-accent;
+            }
+        }
+
+        &-rate {
+            .text-basic (@size: 18px, @height: 18px, @color: #615855);
+            margin: 0;
+        }
+    }
+
+    &-btn {
+        .button();
+        width: 170px;
+        height: 50px;
+        border-radius: 3px;
+        font-family: @font-titles;
+        font-size: 14px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+}

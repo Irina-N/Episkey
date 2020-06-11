@@ -1,0 +1,164 @@
+.recent-posts {
+    width: @width-main;
+    min-height: 750px;
+    margin: 0;
+    padding: 80px 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &-title {
+        .text-titles ();
+        text-transform: capitalize;
+        display: block;
+        width: 770px;
+        margin: 0 375px 30px;
+    }
+
+    &-txt {
+        .text-basic (@align: center);
+        margin: 0 375px;
+        width: 770px;
+    }
+
+    &-content {
+        width: 100%;
+        min-height: 395px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        margin: 40px auto;
+
+        &-item {
+            width: 370px;
+            min-height: 395px;
+            border: 1px solid #f8f8f8;
+            box-sizing: border-box;
+            margin: 0 15px;
+            text-decoration: none;
+            position: relative;
+
+            &:hover {
+                background-color: #362f2d;
+                transition-duration: 700ms;
+            }
+
+            &:active {
+                opacity: 0.5;
+            }
+
+            &:hover &-pic {
+                filter: brightness(40%);
+                transition-duration: 500ms;
+
+            }
+
+            &:hover &-title {
+                color: @color-accent;
+                transition-duration: 700ms;
+            }
+
+            &:hover &-txt {
+                color: @color-text-light;
+                transition-duration: 700ms;
+            }
+
+            &:hover &-day {
+                background-color: @color-accent;
+                transition-duration: 700ms;
+            }
+
+            &:hover &-month {
+                background-color: #a48d72;
+                transition-duration: 700ms;
+            }
+
+
+            &-pic {
+                width: 368px;
+                height: 220px;
+                display: block;
+            }
+
+            &-title {
+                .text-titles (@size: 20px, @height: 20px, @weight: 500, @align: left);
+                display: block;
+                margin: 30px 29px 19px;
+            }
+
+            &-txt {
+                .text-basic (@size: 14px, @height: 22px);
+                margin: 0 29px;
+            }
+
+            &-link {
+                .text-basic (@size: 14px, @height: 14px, @color: @color-accent);
+                text-transform: capitalize;
+                display: block;
+                margin: 27px 29px 0 29px;
+                position: relative;
+
+                &:after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    border: 5px solid transparent;
+                    border-left: 5px solid currentColor;
+                    top: 1px;
+                    left: 82px;
+                }
+
+                &:hover {
+                    color: #d1d1d1;
+                }
+
+                &:active {
+                    color: @color-accent;
+                }
+            }
+
+            &-day {
+                display: block;
+                margin: 0;
+                width: 50px;
+                height: 35px;
+                background-color: #363636;
+                border-radius: 3px 3px 0px 0px;
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                .text-basic (@size: 24px, @height: 40px, @color: @color-text-light, @align: center);
+            }
+
+            &-month {
+                display: block;
+                margin: 0;
+                width: 50px;
+                height: 25px;
+                background-color: #252525;
+                border-radius: 0px 0px 3px 3px;
+                position: absolute;
+                top: 55px;
+                left: 20px;
+                .text-basic (@family: @font-3, @size: 12px, @height: 23px, @weight: 400, @color: @color-text-light, @align: center);
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    &-btn {
+        width: 22px;
+        height: 22px;
+        margin: 0 4px;
+        fill: #d1d1d1;
+        background-color: transparent;
+        .button-svg();
+
+        &:active {
+            fill: #d1d1d1;
+        }
+    }
+}

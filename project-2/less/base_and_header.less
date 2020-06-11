@@ -1,0 +1,270 @@
+html {
+    height: 100%;
+}
+
+body {
+    max-width: 1920px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'montserrat', sans-serif;
+    color: @color-text-main;
+}
+
+main {
+    width: 100%;
+}
+
+.main-header {
+    width: @width-main;
+    height: 1024px;
+    background-color: #362f2d;
+    background-image: url(../img/header_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-top {
+    width: @width-main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 182px;
+    margin: 0 219px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+
+    &-svg {
+        fill: currentColor;
+        width: 64px;
+        height: 56px;
+    }
+
+    &-txt {
+        .text-titles(@size: 34px, @height: 34px, @weight: 400, @color: currentColor, @align: right);
+    }
+
+    &:hover {
+        color: @color-accent;
+    }
+
+    &:active {
+        color: #fff;
+    }
+}
+
+.burger_menu,
+.burger_menu-line {
+    display: none;
+}
+
+.main-menu {
+    display: flex;
+    width: 640px;
+    height: 56px;
+    justify-content: space-between;
+    align-items: center;
+
+    &-item {
+        .text-basic (@family: @font-text, @size: 14px, @height: 56px, @weight: 300, @color: @color-text-light, @align: center);
+        text-decoration: none;
+        text-transform: capitalize;
+
+        &:hover {
+            color: @color-accent;
+        }
+
+        &:active {
+            color: @color-text-light;
+        }
+    }
+}
+
+.go-to-basket {
+    .button-svg();
+    background-color: transparent;
+    fill: #fff;
+    margin: 0 28px 0 63px;
+}
+
+.site-search {
+    min-width: 30px;
+    height: 28px;
+    margin: 0;
+    position: relative;
+
+    &-field {
+        display: block;
+        width: 0;
+        height: 28px;
+        border: none;
+        font-size: 14px;
+        border-radius: 5px;
+        background-color: transparent;
+        outline: none;
+        position: absolute;
+        bottom: -35px;
+        left: -285px;
+
+        &:focus {
+            padding: 5px 10px;
+            width: 320px;
+            background-color: @color-bg-light;
+            transition: width 1s ease-out;
+        }
+    }
+
+    &-label {
+        .button-svg();
+        height: 28px;
+        width: 27px;
+        background-color: transparent;
+        fill: #fff;
+        position: absolute;
+        top: -2px;
+        left: 0;
+    }
+
+    &-svg {
+        width: 27px;
+        height: 28px;
+    }
+}
+
+.slider {
+    width: @width-main;
+    height: 873px;
+    margin: 0 auto;
+    padding: 285px 0 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &-btn {
+        .button-svg();
+        width: 42px;
+        height: 75px;
+        margin: 0 150px;
+        background-color: transparent;
+        fill: @color-text-light;
+        opacity: 0.5;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &-svg {
+        width: 42px;
+        height: 75px;
+    }
+
+    &-content {
+        width: 600px;
+        height: 263px;
+        margin: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+
+        &-title-1 {
+            display: block;
+            .text-titles (@size: 36px, @height: 36px, @weight: 500, @color: @color-text-light);
+            margin: 0 auto 14px;
+
+        }
+
+        &-title-2 {
+            display: block;
+            .text-titles (@size: 52px, @height: 52px, @weight: 800, @color: @color-text-light);
+            letter-spacing: 0.5px;
+        }
+
+        &-txt {
+            .text-basic (@height: 24px, @color: @color-text-light, @align: center);
+            width: 600px;
+            min-height: 42px;
+            margin: 19px 0 52px;
+
+        }
+
+        &-btn {
+            .button();
+            width: 170px;
+            height: 53px;
+            border-radius: 3px;
+            font-family: @font-titles;
+            font-size: 14px;
+            line-height: 14px;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+    }
+
+    &-pagination {
+        width: @width-main;
+        margin: 327px auto 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        &-link:not(.active) {
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            opacity: 0.5;
+            background-color: #ffffff;
+            border: 2.0px solid transparent;
+            box-sizing: border-box;
+            margin: 0 5px;
+
+            &:hover:not(.active) {
+                background-color: @color-accent;
+                opacity: 1;
+            }
+
+            &:active:not(.active) {
+                background-color: @color-btn-bg;
+                opacity: 1;
+            }
+        }
+
+        &-link.active {
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            border: 2.0px solid #d3c1ad;
+            background-color: transparent;
+            margin: 0 5px;
+
+            &:hover {
+                opacity: 0.5;
+            }
+
+            &:active {
+                opacity: 1;
+            }
+        }
+    }
+}
