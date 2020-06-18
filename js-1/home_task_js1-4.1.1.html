@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home task</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+    
+	    // Задание 1.1.
+
+	    //es5
+
+	    /* 
+        function Product(name, price) {
+        	this.name = name;
+        	this.price = price;
+        }
+
+        Product.prototype.make25PercentDiscount = function() {
+        		this.price = this.price * 0.75;
+        	}
+
+        const products = [
+        	new Product("product1", 1000),
+       		new Product("product2", 300),
+       		new Product("product3", 650),
+        ];
+
+        for (let product of products) {
+        	product.make25PercentDiscount();
+        }
+
+        console.log(products);
+		*/ 
+
+		//es6
+		
+		class Product {
+			constructor(name, price) {
+				this.name = name;
+        		this.price = price;
+			}
+
+			make25PercentDiscount() {
+				this.price = this.price * 0.75;
+			}
+		}
+
+		const products = [
+        	new Product("product1", 1000),
+       		new Product("product2", 300),
+       		new Product("product3", 650),
+        ];
+
+        for (let product of products) {
+        	product.make25PercentDiscount();
+        }
+
+        console.log(products); 
+
+
+     </script>
+</body>
+
+</html>
+
+
