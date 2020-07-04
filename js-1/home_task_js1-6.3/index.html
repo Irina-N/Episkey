@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>My hipster socks</title>
+</head>
+
+<body>
+    <div class="catalog_content">
+        <div class="product" id="01">
+            <p class="product-name">Носки мужские Filin</p>
+            <img class="photo" src="img/menFilin.jpg" title="Носки мужские Filin" alt="Filin" width="220" height="270">
+            <p class="price-text"><span class="price">270</span> руб.</p>
+            <button class="btn">В корзину</button>
+        </div>
+        <div class="product" id="02">
+            <p class="product-name">Носки мужские Zebra</p>
+            <img class="photo" src="img/menZebra.jpg" title="Носки мужские Zebra" alt="Zebra" width="220" height="270">
+            <p class="price-text"><span class="price">255</span> руб.</p>
+            <button class="btn">В корзину</button>
+        </div>
+        <div class="product" id="03">
+            <p class="product-name">Носки мужские MorDno</p>
+            <img class="photo" src="img/menMorDno.jpg" title="Носки мужские MorDno" alt="MorDno" width="220" height="270">
+            <p class="price-text"><span class="price">230</span> руб.</p>
+            <button class="btn">В корзину</button>
+        </div>
+    </div>
+    <div class="basket">
+        <p class="basket-title">Корзина</p>
+        <p class="empty-basket">Корзина пуста</p>
+        <table class="basket-table hidden">
+            <tr>
+                <th>id</th>
+                <th>Наименование</th>
+                <th>Цена</th>
+            </tr>
+            <tfoot class="basaket-table-foot">
+                <td colspan="2">К оплате:</td>
+                <td id="busketSumm"></td>
+            </tfoot>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
