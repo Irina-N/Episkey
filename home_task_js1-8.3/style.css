@@ -1,0 +1,56 @@
+.container {
+    width: 380px;
+    margin: 50px auto;
+/*    background-color: #ccc;*/
+    padding: 20px;
+
+}
+
+.screen {
+    border: 1px solid burlywood;
+    width: 378px;
+    height: 80px;
+    margin: 0 auto 30px;
+    background-color: beige;
+    color: #444;
+    text-align: right;
+    font-size: 50px;
+    line-height: 70px;
+    font-family: 'Arial';
+    font-weight: 300;
+    padding: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.buttons{
+    margin: 0 auto;
+}
+
+.backspace {
+    background-image: url(img/backspace.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.buttons td {
+    width: 70px;
+    height: 70px;
+    border: 1px solid orange;
+    text-align: center;
+    font-family: 'Arial';
+    font-weight: 900;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: bisque;
+    color: saddlebrown;
+}
+
+.buttons td:hover {
+    background-color: burlywood;
+}
+
+.buttons td:active {
+    background-color: beige;
+}

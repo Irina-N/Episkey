@@ -1,0 +1,15 @@
+#game {
+    width: 210px;
+    margin: 50px auto;
+}
+
+#game td {
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+    text-align: center;
+    font-family: 'Arial';
+    font-weight: 900;
+    font-size: 40px;
+    border-collapse: collapse;
+}
