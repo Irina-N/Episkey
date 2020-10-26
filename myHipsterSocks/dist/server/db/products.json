@@ -1,0 +1,62 @@
+[
+  {
+    "id_product":  100,
+    "product_name": "Носки мужские Filin",
+    "price": 300,
+    "product_img": "img/filin.jpg"
+  },
+  {
+    "id_product": 101,
+    "product_name": "Носки мужские Zebra",
+    "price": 270,
+    "product_img": "img/zebra.jpg"
+  },
+  {
+    "id_product": 102,
+    "product_name": "Носки мужские MorDno",
+    "price": 250,
+    "product_img": "img/mordno.jpg"
+  },
+  {
+    "id_product": 103,
+    "product_name": "Носки мужские Fox",
+    "price": 300,
+    "product_img": "img/fox.jpg"
+  },
+  {
+    "id_product": 104,
+    "product_name": "Носки мужские Kiwi",
+    "price": 300,
+    "product_img": "img/kiwi.jpg"
+  },
+  {
+    "id_product": 105,
+    "product_name": "Носки мужские Kvadro",
+    "price": 270,
+    "product_img": "img/kvadro.jpg"
+  },
+  {
+    "id_product": 106,
+    "product_name": "Носки мужские Morkovka",
+    "price": 270,
+    "product_img": "img/morkovka.jpg"
+  },
+  {
+    "id_product": 107,
+    "product_name": "Носки мужские Nobo",
+    "price": 250,
+    "product_img": "img/nobo.jpg"
+  },
+  {
+    "id_product": 108,
+    "product_name": "Носки мужские Ovechka",
+    "price": 250,
+    "product_img": "img/ovechka.jpg"
+  },
+  {
+    "id_product": 109,
+    "product_name": "Носки мужские Velik",
+    "price": 270,
+    "product_img": "img/velik.jpg"
+  }
+]

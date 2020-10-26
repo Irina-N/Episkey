@@ -1,0 +1,13 @@
+{
+    "amount": 0,
+    "countGoods": 0,
+    "contents": [
+        {
+            "quantity": 1,
+            "id_product": 104,
+            "product_name": "Носки мужские Kiwi",
+            "price": 300,
+            "product_img": "img/kiwi.jpg"
+        }
+    ]
+}

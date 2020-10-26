@@ -1,0 +1,172 @@
+[
+    {
+        "time": "27 Oct 2020, 12:17:44 am",
+        "prod_name": "Носки мужские Filin",
+        "action": "add"
+    },
+    {
+        "time": "27 Oct 2020, 12:17:44 am",
+        "prod_name": "Носки мужские Zebra",
+        "action": "add"
+    },
+    {
+        "time": "27 Oct 2020, 12:17:45 am",
+        "prod_name": "Носки мужские MorDno",
+        "action": "add"
+    },
+    {
+        "time": "27 Oct 2020, 12:17:45 am",
+        "prod_name": "Носки мужские Fox",
+        "action": "add"
+    },
+    {
+        "time": "27 Oct 2020, 12:17:46 am",
+        "prod_name": "Носки мужские Nobo",
+        "action": "add"
+    },
+    {
+        "time": "27 Oct 2020, 12:17:47 am",
+        "prod_name": "Носки мужские Morkovka",
+        "action": "add"
+    },
+    {
+        "time": "27 Oct 2020, 12:17:48 am",
+        "prod_name": "Носки мужские Kvadro",
+        "action": "add"
+    },
+    {
+        "time": "27 Oct 2020, 12:17:48 am",
+        "prod_name": "Носки мужские Kiwi",
+        "action": "add"
+    },
+    {
+        "time": "27 Oct 2020, 12:17:50 am",
+        "prod_name": "Носки мужские Ovechka",
+        "action": "add"
+    },
+    {
+        "time": "27 Oct 2020, 12:17:50 am",
+        "prod_name": "Носки мужские Velik",
+        "action": "add"
+    },
+    {
+        "time": "27 Oct 2020, 12:18:19 am",
+        "prod_name": "Носки мужские Filin",
+        "action": "remove"
+    },
+    {
+        "time": "27 Oct 2020, 12:18:19 am",
+        "prod_name": "Носки мужские Filin",
+        "action": "remove"
+    },
+    {
+        "time": "27 Oct 2020, 12:18:19 am",
+        "prod_name": "Носки мужские Zebra",
+        "action": "remove"
+    },
+    {
+        "time": "27 Oct 2020, 12:18:20 am",
+        "prod_name": "Носки мужские MorDno",
+        "action": "remove"
+    },
+    {
+        "time": "27 Oct 2020, 12:19:57 am",
+        "prod_name": "Носки мужские Filin",
+        "action": "add"
+    },
+    {
+        "time": "27 Oct 2020, 12:19:58 am",
+        "prod_name": "Носки мужские Zebra",
+        "action": "add"
+    },
+    {
+        "time": "27 Oct 2020, 12:19:58 am",
+        "prod_name": "Носки мужские MorDno",
+        "action": "add"
+    },
+    {
+        "time": "27 Oct 2020, 12:19:59 am",
+        "prod_name": "Носки мужские Fox",
+        "action": "change"
+    },
+    {
+        "time": "27 Oct 2020, 12:20:04 am",
+        "prod_name": "Носки мужские Zebra",
+        "action": "remove"
+    },
+    {
+        "time": "27 Oct 2020, 12:20:05 am",
+        "prod_name": "Носки мужские Velik",
+        "action": "remove"
+    },
+    {
+        "time": "27 Oct 2020, 12:20:06 am",
+        "prod_name": "Носки мужские Kiwi",
+        "action": "remove"
+    },
+    {
+        "time": "27 Oct 2020, 12:20:06 am",
+        "prod_name": "Носки мужские Morkovka",
+        "action": "remove"
+    },
+    {
+        "time": "27 Oct 2020, 12:20:08 am",
+        "prod_name": "Носки мужские MorDno",
+        "action": "change"
+    },
+    {
+        "time": "27 Oct 2020, 12:20:11 am",
+        "prod_name": "Носки мужские Nobo",
+        "action": "remove"
+    },
+    {
+        "time": "27 Oct 2020, 12:20:12 am",
+        "prod_name": "Носки мужские Fox",
+        "action": "change"
+    },
+    {
+        "time": "27 Oct 2020, 12:20:12 am",
+        "prod_name": "Носки мужские Fox",
+        "action": "remove"
+    },
+    {
+        "time": "27 Oct 2020, 12:20:13 am",
+        "prod_name": "Носки мужские Kvadro",
+        "action": "remove"
+    },
+    {
+        "time": "27 Oct 2020, 12:20:18 am",
+        "prod_name": "Носки мужские Ovechka",
+        "action": "remove"
+    },
+    {
+        "time": "27 Oct 2020, 12:20:18 am",
+        "prod_name": "Носки мужские Filin",
+        "action": "remove"
+    },
+    {
+        "time": "27 Oct 2020, 12:20:18 am",
+        "prod_name": "Носки мужские MorDno",
+        "action": "change"
+    },
+    {
+        "time": "27 Oct 2020, 12:20:20 am",
+        "prod_name": "Носки мужские MorDno",
+        "action": "remove"
+    },
+    {
+        "time": "27 Oct 2020, 12:46:29 am",
+        "prod_name": "Носки мужские Kvadro",
+        "action": "add"
+    },
+    {
+        "time": "27 Oct 2020, 12:46:30 am",
+        "prod_name": "Носки мужские Kiwi",
+        "action": "add"
+    },
+    {
+        "time": "27 Oct 2020, 12:46:44 am",
+        "prod_name": "Носки мужские Kvadro",
+        "action": "remove"
+    }
+]
